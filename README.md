@@ -19,19 +19,19 @@ It integrates **Google Custom Search** for real-world info, **OpenWeather API** 
 
 ---
 
-🖼️ Workflow Diagram  
+🖼️ **Workflow Diagram**
 
 ```mermaid
-flowchart TD
-    A[User enters goal in Web UI] --> B[Flask App]
-    B --> C[Planner Agent Gemini LLM]
-    C --> D[Google Custom Search API]
-    C --> E[OpenWeather API]
-    D --> C
-    E --> C
-    C --> F[Day-by-Day Structured Plan]
-    F --> G[SQLite Database]
-    G --> H[Web UI - Show Plan + History]
+flowchart LR
+    User --> WebUI[Web UI]
+    WebUI --> FlaskApp[Flask App]
+    FlaskApp --> Planner[Planner Agent (Gemini LLM)]
+    Planner --> GoogleAPI[Google Search API]
+    Planner --> WeatherAPI[OpenWeather API]
+    Planner --> Plan[Structured Plan]
+    Plan --> Database[SQLite Database]
+    Database --> WebUI
+
 
 
 ⚙️ Setup Instructions
