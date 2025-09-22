@@ -1,0 +1,19 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environment
+venv/
+.env
+
+# Database file (optional – keep if you want to share sample data)
+plans.db
+
+# VS Code settings
+.vscode/
+
+# macOS/Linux system files
+.DS_Store

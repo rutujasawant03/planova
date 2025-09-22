@@ -1,0 +1,6 @@
+flask
+openai
+requests
+python-dotenv
+beautifulsoup4
+google-api-python-client
