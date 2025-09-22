@@ -24,7 +24,7 @@ It integrates **Google Custom Search** for real-world info, **OpenWeather API** 
 ```mermaid
 flowchart TD
     A[User enters goal in Web UI] --> B[Flask App]
-    B --> C[Planner Agent (Gemini LLM)]
+    B --> C[Planner Agent Gemini LLM]
     C --> D[Google Custom Search API]
     C --> E[OpenWeather API]
     D --> C
